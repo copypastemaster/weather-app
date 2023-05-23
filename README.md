@@ -1,3 +1,4 @@
-# Prototype of weather app
+# Live preview: https://copypastemaster.github.io/weather-app/
 
-# Styles will be added soon
+Prototype of weater app
+Styles to be followed
