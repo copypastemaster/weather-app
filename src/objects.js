@@ -15,7 +15,7 @@ export default (async function getDetails() {
     // data.fahr = response.current.feelslike_f;
     // data.celsius = response.current.feelslike_c;
 
-    location.textContent = response.location.name;
+    location.textContent = `${response.location.name}, ${response.location.country}`;
     condition.textContent = response.current.condition.text;
     fahr.textContent = response.current.feelslike_f;
     celsius.textContent = response.current.feelslike_c;
