@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&family=Montserrat:wght@200&family=Noto+Sans+JP:wght@300&family=Nunito+Sans:ital,wght@1,200&family=Roboto:wght@300;400&family=Shantell+Sans:ital,wght@1,300&display=swap');
+
+* {
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+#container {
+  max-width: 450px;
+  margin: 0 auto;
+  border: 1px solid black;
+  background-color: rgba(198, 206, 129, 0.877);
+  border-radius: 25px;
+  padding: 2rem;
+}
+
+#search {
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 4px;
+}
+
+#submit {
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+}

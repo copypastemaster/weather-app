@@ -20,10 +20,18 @@ async function clientData() {
 
     location.textContent = `${response.location.name}, ${response.location.country}`;
     condition.textContent = response.current.condition.text;
-    fahr.textContent = response.current.feelslike_f;
-    celsius.textContent = response.current.feelslike_c;
+    fahr.textContent = `${response.current.feelslike_f} F`;
+    celsius.textContent = response.current.feelslike_c + 'c';
 
-    console.log(response);
+    if (response.current.condition.text === 'Partly cloudy') {
+      document.body.style = 'background-color: steelblue;';
+    } else if (response.current.condition.text === 'Sunny') {
+      document.body.style = 'background-color: rgb(221, 165, 44);';
+    } else if (response.current.condition.text === 'Raining') {
+      document.body.style = 'background-color: rgb(26, 26, 32);';
+    } else {
+      document.body.style = 'background-color: rgba(235, 242, 245, 0.877);';
+    }
   } catch (err) {
     alert('Cannot find city');
   }
